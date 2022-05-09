@@ -1,0 +1,95 @@
+﻿.accordion {
+    width: 100%;
+    color: $color-heading-secondary;
+    overflow: hidden;
+    &:not(:last-child) {
+        border-bottom: .2rem solid $color-grey;
+    }
+
+    &__wrapper {
+        border-radius: 3rem;
+        overflow: hidden;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+        margin:0 auto;
+
+        @include respond(tab-port) {
+            width: 80%;
+        }
+
+        @include respond(tab-land) {
+            width: 80%;
+        }
+
+        @include respond(big-desktop) {
+            width: 65%;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__label {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 1.6rem;
+        background:  $color-grey-light-3;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        font-family: "Effra";
+    }
+
+    &__label:hover {
+        background:  $color-grey-light-2;
+    }
+
+    &__label::after {
+        content: "\276F";
+        color: $color-primary;
+        width: 1.6rem;
+        height: 1.6rem;
+        text-align: center;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+     }
+
+     &__content {
+        max-height: 0;
+        padding: 0 1.6rem;
+        color: $color-black;
+        background: $color-white;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+     }
+
+     &__content p {
+        margin: 0;
+        color: $color-heading-secondary;
+        font-size: 1.6rem;
+        font-family: "Effra";
+        line-height: 2.2rem;
+        font-weight: 300;
+     }
+}
+
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input:checked + .accordion__label {
+    background: $color-grey-light-3;
+}
+input:checked + .accordion__label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+input:checked ~ .accordion__content {
+    max-height: 100vh;
+    padding: 16px;
+}

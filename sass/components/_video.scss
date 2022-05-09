@@ -1,0 +1,57 @@
+﻿.video {
+    &__thumbnail {
+        position: relative;
+
+        &-img {
+            height: 40%;
+            width: 40%;
+            outline: 2.5rem solid $color-white;
+            border-radius: .3rem;
+            box-shadow: 2rem 1rem 4rem rgba($color-black, .8);
+            transform: translateY(6.5rem);
+        }
+    }
+
+    &__icon {
+        cursor: pointer;
+        height: 7rem;
+        width: 7rem;
+        background-color: rgba($color-white, .7);
+        border-radius: 50%;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-65%, -50%);
+        z-index: 99;
+        transition: all .2;
+
+        @include respond(tab-port) {
+            height: 5rem;
+            width: 5rem;
+            top: 70%;
+            left: 50%;
+            transform: translate(-70%, -50%);
+        }
+
+        @include respond(phone) {
+            height: 3rem;
+            width: 3rem;
+            top: 100%;
+            left: 55%;
+            transform: translate(-100%, -55%);
+        }
+
+        &-img {
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -55%);
+        }
+
+        &:hover {
+            background-color: rgba($color-white, .9);
+        }
+    }
+}

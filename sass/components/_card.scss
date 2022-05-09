@@ -1,0 +1,110 @@
+﻿.slider {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-port) {
+    height: 65rem;
+  }
+}
+
+.slide {
+  padding: 5rem 0;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+.card-content {
+  position: relative;
+  background-color: $color-white;
+  border-radius: 1rem;
+  border: .1rem solid $color-primary;
+  padding: 5rem 2rem;
+  text-align: left;
+  height: auto;
+}
+
+.checked {
+  color: $color-btn-green;
+  padding: .1rem;
+}
+
+.text-content {
+  text-align: left;
+}
+
+.controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;   
+  width: 75%;   
+  @include absCenter;
+  display: flex;
+  align-items: center;    
+  justify-content: space-between;
+  &:focus {
+      outline: none;
+  }
+
+  li {
+    height: 2.4rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba($color-white, .7);
+    transition: all .2s;
+  }
+
+  li:hover {
+      cursor: pointer; 
+      background-color: $color-white;       
+  }
+}
+
+.img {
+  position: absolute;
+  top: -3rem;
+  left: 2rem;
+  min-height: 6rem;
+  max-width: 6rem;
+  border-radius: 50%;
+  outline: .3rem solid $color-white;
+  box-shadow: .5rem .5rem .5rem rgba($color-black, .2);
+  display: inline-block;
+}
+
+.student-name {
+  font-size: 1.4rem;
+  letter-spacing: .5rem;
+  line-height: 2.1rem;
+  color: $color-heading-secondary;
+  font-weight: bold;
+  font-family: "Effra";
+  position: absolute;
+  top: -2rem;
+  left: 10rem;
+}
+
+.tns-nav {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.tns-nav button {
+  height: 1rem;
+  width: 1rem;
+  background-color: $color-white;
+  border: none;
+  margin-left: 7px;
+  border-radius: 50%;
+}
+.tns-nav .tns-nav-active {
+  background-color: $color-primary;
+  transform: scale(1.3);
+}

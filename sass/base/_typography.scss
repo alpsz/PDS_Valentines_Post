@@ -1,0 +1,125 @@
+﻿body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.2;
+    color: $color-grey-dark;
+}
+
+.heading-primary-1 {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    color: $color-white;
+    font-weight: 700;
+    font-family: "Source Serif Pro";
+    text-align: center;
+    text-transform: capitalize;
+    @include absCenter;
+
+    @include respond(tab-land) {
+        width: 90%;
+    }
+    @include respond(tab-port) {
+        width: 90%;
+    }
+    @include respond(phone) {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+}
+
+.heading-primary-2-main {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    color: $color-heading-secondary;
+    font-weight: bold;
+    font-family: "Effra";
+    text-transform: uppercase;
+    margin-top: 10rem;
+
+    @include respond(tab-port) {
+        margin-top: 3.2rem !important;
+    }
+
+    @include respond(phone) {
+        margin-top: 3.2rem !important;
+    }
+}
+
+.heading-primary-2-sub {
+    font-size: 2.6rem;
+    color: $color-heading-secondary;
+    font-weight: bold;
+    font-family: "Effra";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-secondary {
+    font-size: 2.4rem;
+    letter-spacing: .8rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    color: $color-heading-secondary;
+    font-weight: bold;
+    font-family: "Effra";
+    text-align: center;
+    display: inline-block;
+
+}
+
+.heading-tertiary-1 {
+    font-size: 1.6rem;
+    color: $color-heading-secondary;
+    font-weight: bold;
+    font-family: "Effra";
+    text-transform: capitalize;
+}
+
+.heading-tertiary-2 {
+    font-size: 1.6rem;
+    color: $color-heading-secondary;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Effra";
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.heading-tertiary-3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-heading-secondary;
+    font-weight: bold;
+    letter-spacing: .5rem;
+}
+
+
+
+.text-primary {
+    width: 80%;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: $color-heading-secondary;
+    font-family: "Effra";
+
+    @include respond(tab-land) {
+        width: 100%;
+        font-size: 2rem;
+    }
+    @include respond(tab-port) {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: normal;
+    }
+    
+}
+
+.text-secondary {
+    font-size: 1.6rem !important;
+    line-height: 2.2rem;
+    color: $color-heading-secondary;
+    font-style: italic;
+    font-family: "Effra";
+}

@@ -1,0 +1,52 @@
+﻿.section-specialBonus {
+    height: 10vh;
+}
+
+.section-testimonials {
+    height: auto;
+    position: relative;
+    background-image: url(../img/svgs/val-background-element-2.svg);
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    padding: 5rem 0 8rem 0;
+
+    @include respond(phone) {
+        background-image: url(../img/svgs/val-background-element-2-mobile.svg);
+    }
+}
+
+.section-instruction {
+    background-color: $color-primary;
+    position: relative;
+    padding: 14rem 0;
+
+    @include respond(tab-land) {
+        height: 20rem;
+        padding: 3rem 0;
+    }
+
+    @include respond(tab-port) {
+        height: 20rem;
+        padding: 3rem 0;
+    }
+    @include respond(phone) {
+        height: 30rem;
+        padding: 3rem 0;
+    }
+
+}
+
+.section-about {
+    background-image: url(../img/svgs/val-heart-background.svg);
+    background-size: cover;
+}
+
+.section-video {
+    background-color: rgba($color-blue-grey, .3);
+    padding: 5rem 0 0 0;
+}
+
+.section-faq {
+    padding: 0 2rem;
+}
