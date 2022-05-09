@@ -3,7 +3,7 @@
 ![alt text](https://github.com/alpsz/PDS_Valentines_Post/blob/master/img/screenshot.png)
 
 
-## Sass Folders Descriptions 
+## Sass Folders Description 
 
 - `abstracts`: Contains helper code snippets.
 - `base`: Contains base font style, utilities, animations. 
